@@ -19,11 +19,6 @@ if($_SERVER['SERVER_NAME'] == 'localhost')
     define('DBUSER', getenv('DBUSER'));
     define('DBPASS', getenv('DBPASS'));
 
-    echo getenv('DBNAME');
-    echo getenv('DBHOST');
-    echo getenv('DBUSER');
-    echo getenv('DBPASS');
-
     define('ROOT', 'https://cisc3300-1-2b4be2ca4ddb.herokuapp.com/');
 
 }

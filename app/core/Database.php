@@ -18,6 +18,8 @@ trait Database
 
         $dsn = "mysql:hostname=".DBHOST.";dbname=".DBNAME;
 
+        echo $dsn
+
         try {
             return new PDO($dsn, DBUSER,DBPASS, $options);
         } catch (PDOException $e) {
