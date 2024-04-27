@@ -18,9 +18,24 @@ trait Database
 
         $dsn = "mysql:hostname=".DBHOST.";dbname=".DBNAME;
 
-        echo $dsn;
-
         try {
+
+            echo 'dsn';
+            echo '<br>';
+            echo $dsn;
+            echo '<br>';
+            echo 'DBUSER';
+            echo '<br>';
+            echo DBUSER;
+            echo '<br>';
+            echo 'DBPASS';
+            echo '<br>';
+            echo DBPASS;
+            echo '<br>';
+            echo '$options';
+            echo '<br>';
+            var_dump($options);
+
             return new PDO($dsn, DBUSER,DBPASS, $options);
         } catch (PDOException $e) {
             throw new PDOException($e->getMessage(), $e->getCode());
