@@ -9,7 +9,6 @@ if($_SERVER['SERVER_NAME'] == 'localhost')
     define('DBUSER', $env['DBUSER']);
     define('DBPASS', $env['DBPASS']);
 
-    define('ROOT', 'http://localhost:8888/');
 
 }else
 {
