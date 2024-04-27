@@ -12,7 +12,7 @@
     <body>
 
         <div class="container users-form margin-thirty">
-            <a href="/users-view" class="link">Home</a>
+            <a href="/" class="link">Home</a>
             <h2 class="margin-thirty">Edit User</h2>
             <form id="form-id">
                 <div class="form-group margin-twenty">
@@ -66,7 +66,7 @@
                         data: data,
                         dataType: "json",
                         success: function (data) {
-                            window.location.replace("/users-view");
+                            window.location.replace("/");
                         },
                         error: function (data){
                             $('#firstName-error').html('')

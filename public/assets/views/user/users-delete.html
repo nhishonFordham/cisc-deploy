@@ -12,7 +12,7 @@
     <body>
 
         <div class="container users-form margin-thirty">
-            <a href="/users-view" class="link">Home</a>
+            <a href="/" class="link">Home</a>
             <div id="delete-user-container" class="margin-thirty">
                 <h2 id="user-delete">Are you sure you want to delete </h2>
                 <div id="users-data"></div>
@@ -46,7 +46,7 @@
                         type: "DELETE",
                         dataType: "json",
                         success: function (data) {
-                            window.location.replace("/users-view");
+                            window.location.replace("/");
                         }
                     });
                 })
