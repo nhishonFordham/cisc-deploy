@@ -2,6 +2,7 @@
 
 if($_SERVER['SERVER_NAME'] == 'localhost')
 {
+    $env = parse_ini_file('../.env');
     /** database config **/
     define('DBNAME', $env['DBNAME']);
     define('DBHOST', $env['DBHOST']);

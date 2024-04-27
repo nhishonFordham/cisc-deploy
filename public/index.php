@@ -4,7 +4,7 @@ require_once "../app/models/User.php";
 require_once "../app/controllers/UserController.php";
 
 //set our env variables
-$env = parse_ini_file('../.env');
+
 require '../app/core/config.php';
 
 use app\controllers\UserController;
