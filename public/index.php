@@ -49,7 +49,7 @@ if ($uriArray[1] === 'users' && $_SERVER['REQUEST_METHOD'] === 'DELETE') {
 }
 
 //views
-if ($uri === '/users-view' && $_SERVER['REQUEST_METHOD'] === 'GET') {
+if ($uri === '/' && $_SERVER['REQUEST_METHOD'] === 'GET') {
     $userController = new UserController();
     $userController->usersView();
 }
