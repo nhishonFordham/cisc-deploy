@@ -16,6 +16,7 @@ trait Database
             PDO::ATTR_EMULATE_PREPARES => false,
         ];
 
+        //IMPORTANT! - host not hostname
         $dsn = "mysql:host=".DBHOST.";dbname=".DBNAME;
 
         try {
